@@ -35,32 +35,27 @@ const Slink = styled(Link)`
   color: #656565;
 `;
 
-const RightNav = ({ location: { pathname }, open }) => {
+//{ location: { pathname }, open }
+const RightNav = (props, open) => {
+  console.log(props);
   return (
     <List open={open}>
       <>
-        <Item current={pathname === "/"}>
+        <Item current={props.location.pathname === "/"}>
           <Slink to="/">HOME</Slink>
         </Item>
-        <Item current={pathname === "/company"}>
+        <Item current={props.location.pathname === "/company"}>
           <Slink to="/company">COMPANY</Slink>
         </Item>
-        <Item current={pathname === "/roadmap"}>
+        <Item current={props.location.pathname === "/roadmap"}>
           <Slink to="/roadmap">ROADMAP</Slink>
         </Item>
-        <Item current={pathname === "/product"}>
+        <Item current={props.location.pathname === "/product"}>
           <Slink to="/product">PRESS</Slink>
         </Item>
-        <Item current={pathname === "/team"}>
+        <Item current={props.location.pathname === "/team"}>
           <Slink to="/team">TEAM</Slink>
         </Item>
-
-        {/* <Item current={pathname === "/product"}>
-            <Slink to="/product">PRODUCT</Slink>
-          </Item>
-          <Item current={pathname === "/detail"}>
-            <Slink to="/detail">DETAIL</Slink>
-          </Item> */}
         <Item style={{ color: "#c05c67", fontWeight: 600 }}>
           <Slink to="/"></Slink>
         </Item>
