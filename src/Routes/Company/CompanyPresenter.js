@@ -6,18 +6,32 @@ import styled from "styled-components";
 
 const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
   background-color: rgb(45, 63, 81);
 `;
 
+const GreenYellow = styled.div`
+  height: 1000px;
+  width: 600px;
+  background-color: greenyellow;
+`;
 
 const CompanyPresenter = () => {
   return (
     <Container>
-      <div>This is company</div>
+      <div
+        style={{
+          height: "1000px",
+          width: "600px",
+          backgroundColor: "whitesmoke",
+        }}>
+        This is company
+      </div>
+      <GreenYellow> greenyellow</GreenYellow>
     </Container>
   );
 };

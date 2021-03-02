@@ -41,7 +41,7 @@ const HomePresenter = () => {
       <Vision></Vision>
       <OverseasBranches></OverseasBranches>
       <Footer></Footer>
-      <Link href="#">
+      <Link to="/Company">
         <LoginButton img={shakeHands}></LoginButton>
       </Link>
     </Container>
