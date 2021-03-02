@@ -63,7 +63,7 @@ export default () => {
           <IconBox></IconBox>
           <IconBox></IconBox>
         </IconBoxContainer>
-        <span>copyright</span>
+        <span>copyright &copy;</span>
       </SnsContainer>
     </Container>
   );

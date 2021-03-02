@@ -11,12 +11,12 @@ const Container = styled.div`
   background-color: rgb(45, 63, 81);
 `;
 
-const ProductPresenter = () => {
+const PressPresenter = () => {
   return (
     <Container>
-      <div>This is product</div>
+      <div>This is press</div>
     </Container>
   );
 };
 
-export default ProductPresenter;
+export default PressPresenter;

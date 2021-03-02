@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Header from "./Header";
 import Home from "Routes/Home/index";
-import Product from "Routes/Product";
+import Press from "Routes/Press";
 import Company from "Routes/Company";
 import RoadMap from "Routes/RoadMap";
 import TeamMember from "./others/TeamMember";
@@ -21,7 +21,7 @@ export default () => {
           <Home></Home>
         </Route>
         <Route path="/company" component={Company}></Route>
-        <Route path="/product" component={Product}></Route>
+        <Route path="/press" component={Press}></Route>
         <Route path="/team" component={TeamMember}></Route>
         <Route path="/roadmap" component={RoadMap}></Route>
         <Redirect from="*" to="/"></Redirect>

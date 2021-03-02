@@ -50,8 +50,8 @@ const RightNav = (props, open) => {
         <Item current={props.location.pathname === "/roadmap"}>
           <Slink to="/roadmap">ROADMAP</Slink>
         </Item>
-        <Item current={props.location.pathname === "/product"}>
-          <Slink to="/product">PRESS</Slink>
+        <Item current={props.location.pathname === "/press"}>
+          <Slink to="/press">PRESS</Slink>
         </Item>
         <Item current={props.location.pathname === "/team"}>
           <Slink to="/team">TEAM</Slink>
